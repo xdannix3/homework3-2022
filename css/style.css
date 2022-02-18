@@ -71,16 +71,16 @@ footer a:visited{
 /*****  End Starter Code ****/
 
 /* Requirement 1 code here*/
-nav a{
+a:link {
   text-decoration: none;
 }
 
 /* Requirement 2 code here*/
 
-nav li a:hover {
-  text-decoration: wavy underline;
+a:hover {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
 }
-
 
 a.skip{
   background: white;
@@ -150,7 +150,7 @@ img{
 
 
 .text{
-  text-align: center;
+  align-self: center;
   max-height: 25vh;
   overflow: scroll;
 }

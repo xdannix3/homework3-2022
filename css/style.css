@@ -90,7 +90,7 @@ a.skip{
   z-index: 1;
   /* Requirement 3 code here*/
   position: relative;
-  right: 500px;
+  left: -500px;
 }
 
 

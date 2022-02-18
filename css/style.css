@@ -89,7 +89,7 @@ a.skip{
   transition: left 1s ease-out;   
   z-index: 1;
   /* Requirement 3 code here*/
-  position: relative;
+  position: absolute;
   left: -500px;
 }
 
@@ -110,27 +110,15 @@ a:any-link:focus{
 /* Requirements 6-10 here: */
 .intro{
   background-image: url(../images/header.jpg);
+  background-color: #707070;
+  min-height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 400px;
-  background-color: #707070;
 }
 
-.about{
-  grid-column: 2 / 3;
-}
-
-.clients{
-  grid-column: 2 / 3;
-}
-
-.method{
-  grid-column: 2 / 3;
-}
-
-.contact{
+.about, .clients, .method, .contact{
   grid-column: 2 / 3;
 }
 
@@ -138,33 +126,11 @@ img{
   width: 100%;
 }
 
-.about-image {
-  grid-column: 1 /  span 3;
-  max-height: 500px;
-  overflow: hidden;
-
-}
-
-.clients-image{
-  grid-column: 1 /  span 3;
+.about-image, .clients-image, .method-image, .contact-image {
+  grid-column: 1 / span 3;
   max-height: 500px;
   overflow: hidden;
 }
-
-
-.method-image{
-  grid-column: 1 /  span 3;
-  max-height: 500px;
-  overflow: hidden;
-}
-
-
-.contact-image{
-  grid-column: 1 /  span 3;
-  max-height: 500px;
-  overflow: hidden;
-}
-
 
 .about, .about-image{
   grid-row: 1 / 2;
